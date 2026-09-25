@@ -1,0 +1,48 @@
+name: Bug report
+description: Meld een probleem met Omada Network Manager
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Bedankt voor je melding. Deel geen Client Secret, tokens, wachtwoorden of ruwe privé-netwerkdata.
+  - type: input
+    id: app_version
+    attributes:
+      label: Appversie
+      placeholder: "Bijv. 0.4.1"
+    validations:
+      required: true
+  - type: input
+    id: homey_version
+    attributes:
+      label: Homey firmware
+      placeholder: "Bijv. 12.3.x"
+    validations:
+      required: true
+  - type: input
+    id: controller
+    attributes:
+      label: Omada-controller
+      placeholder: "Bijv. OC200 + firmwareversie"
+  - type: textarea
+    id: problem
+    attributes:
+      label: Wat gaat er mis?
+      description: Beschrijf wat je ziet en wat je verwachtte.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Stappen om het probleem te reproduceren
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Diagnostiek
+      description: Voeg alleen de geanonimiseerde diagnostische export toe nadat je die zelf hebt gecontroleerd.
