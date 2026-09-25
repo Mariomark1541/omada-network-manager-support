@@ -1,0 +1,26 @@
+name: Feature request
+description: Stel een nieuwe functie of verbetering voor
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Beschrijf vooral wat je met de functie wilt bereiken. Deel geen geheime Omada-gegevens.
+  - type: textarea
+    id: use_case
+    attributes:
+      label: Wat wil je kunnen doen?
+      description: Beschrijf de praktische situatie of automatisering.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Gewenste oplossing
+      description: Hoe zou je dit graag terugzien in Homey?
+  - type: input
+    id: hardware
+    attributes:
+      label: Relevante Omada-hardware
+      placeholder: "Bijv. OC200, ER605, SG2210P, EAP650"
